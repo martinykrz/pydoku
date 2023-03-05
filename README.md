@@ -1,5 +1,5 @@
 # pydoku
-Simple sudoku made with python
+Simple CLI sudoku made in Python
 
 ## TODO
 * Make a GUI

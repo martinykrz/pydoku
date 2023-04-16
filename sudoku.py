@@ -66,6 +66,11 @@ def play_game():
     while True:
         row = int(input("Enter row number (1-9): ")) - 1
         col = int(input("Enter column number (1-9): ")) - 1
+        if row < 0 and col < 0:
+            solve_board(board)
+            print("Result:")
+            print_board(board)
+            break
         if board[row][col] != 0:
             print("That position is already filled!")
             continue
